@@ -24,19 +24,21 @@ function StudentForm({ initialData, onSubmit, submitLabel }) {
             backgroundColor: "floralwhite",
             marginLeft: "15%",
             marginTop: "50px",
-            paddingTop: "40px"
+            paddingTop: "40px",
+            borderRadius: "10px",
+            boxShadow: "2px 2px 10px lightgrey"
         }}>
             <label htmlFor="name" >Name</label>
-            <input name="name" placeholder="Name" value={form.name} onChange={handleChange} required style={{height:"35px",width:'510px',margin:"10px",backgroundColor:"snow"}}/><br/>
+            <input name="name" placeholder="Your_name" value={form.name} onChange={handleChange} required style={{height:"35px",width:'510px',margin:"10px",backgroundColor:"snow"}}/><br/>
 
             <label htmlFor="email">Email</label>
-            <input name="email" placeholder="Email" value={form.email} onChange={handleChange} required style={{height:"35px",width:'510px',margin:"10px",backgroundColor:"snow"}}/><br/>
+            <input name="email" placeholder="mail@gmail.com" value={form.email} onChange={handleChange} required style={{height:"35px",width:'510px',margin:"10px",backgroundColor:"snow"}}/><br/>
 
             <label htmlFor="course">Course</label>
-            <input name="course" placeholder="Course" value={form.course} onChange={handleChange} required style={{height:"35px",width:'510px',margin:"10px",backgroundColor:"snow"}}/><br/>
+            <input name="course" placeholder="Eg.,IT" value={form.course} onChange={handleChange} required style={{height:"35px",width:'510px',margin:"10px",backgroundColor:"snow"}}/><br/>
 
             <label htmlFor="Age">Age</label>
-            <input name="age" type="number" placeholder="Age" value={form.age} onChange={handleChange} required style={{height:"35px",width:'510px',margin:"10px",backgroundColor:"snow"}}/><br/>
+            <input name="age" type="number" placeholder="Eg.,20" value={form.age} onChange={handleChange} required style={{height:"35px",width:'510px',margin:"10px",backgroundColor:"snow"}}/><br/>
 
             <button type="submit" style={{height:"40px", width:"140px", marginTop:"20px", backgroundColor:"powderblue", borderRadius:"20px"}}>{submitLabel}</button>
         </form>
