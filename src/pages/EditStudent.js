@@ -26,7 +26,7 @@ function EditStudent() {
 
     return (
         <div>
-            <h1>Edit Student</h1>
+            <h1 style={{textAlign:"center"}}>EDIT STUDENT</h1>
             <StudentForm initialData={student} onSubmit={handleUpdate} submitLabel="Update Student" />
         </div>
     );

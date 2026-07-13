@@ -13,7 +13,7 @@ function AddStudent() {
 
     return (
         <div>
-            <h1>Add Student</h1>
+            <h1 style={{textAlign:"center"}}>ADD STUDENT</h1>
             <StudentForm onSubmit={handleAdd} submitLabel="Add Student" />
         </div>
     );

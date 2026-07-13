@@ -21,18 +21,18 @@ function StudentList() {
 
     return (
         <div>
-            <h1>Student Management System</h1>
+            <h1 style={{textAlign:"center"}}>STUDENT MANAGEMENT SYSTEM</h1>
             <Link to="/students/new">
-                <button>+ Add Student</button>
+                <button style={{height:"30px",width:"300px",backgroundColor:"bisque",marginLeft:"8px",borderRadius:"30px"}}>+ Add Student</button>
             </Link>
 
             <table border="1" cellPadding="8" style={{ marginTop: '20px', width: '100%' }}>
-                <thead>
+                <thead style={{backgroundColor:"lavender"}}>
                 <tr>
                     <th>ID</th><th>Name</th><th>Email</th><th>Course</th><th>Age</th><th>Actions</th>
                 </tr>
                 </thead>
-                <tbody>
+                <tbody style={{backgroundColor:"lavenderblush"}}>
                 {students.map((s) => (
                     <tr key={s.id}>
                         <td>{s.id}</td>
@@ -42,9 +42,9 @@ function StudentList() {
                         <td>{s.age}</td>
                         <td>
                             <Link to={`/students/${s.id}/edit`}>
-                                <button>Edit</button>
+                                <button style={{backgroundColor:"lightyellow", borderRadius:"5px", marginRight:"10px"}}>Edit</button>
                             </Link>
-                            <button onClick={() => handleDelete(s.id)}>Delete</button>
+                            <button onClick={() => handleDelete(s.id)} style={{backgroundColor:"aliceblue", borderRadius:"5px"}}>Delete</button>
                         </td>
                     </tr>
                 ))}
