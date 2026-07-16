@@ -19,6 +19,7 @@ function EditStudent() {
 
     const handleUpdate = async (formData) => {
         await updateStudent(id, formData);
+        alert("Student updated");
         navigate('/');
     };
 

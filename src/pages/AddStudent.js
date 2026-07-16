@@ -8,6 +8,7 @@ function AddStudent() {
 
     const handleAdd = async (formData) => {
         await createStudent(formData);
+        alert("Student added");
         navigate('/');
     };
 
