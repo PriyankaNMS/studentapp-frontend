@@ -16,6 +16,7 @@ function StudentList() {
 
     const handleDelete = async (id) => {
         await deleteStudent(id);
+        alert("Student deleted");
         fetchStudents();
     };
 
